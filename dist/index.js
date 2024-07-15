@@ -2742,12 +2742,9 @@ function run() {
             maxRetries: maxRetries
         });
         try {
-            const ipv4 = yield http.getJson("https://api.ipify.org?format=json");
-            const ipv6 = yield http.getJson("https://api64.ipify.org?format=json");
-            core.setOutput("ipv4", ipv4.result.ip);
-            core.setOutput("ipv6", ipv6.result.ip);
-            core.info(`ipv4: ${ipv4.result.ip}`);
-            core.info(`ipv6: ${ipv6.result.ip}`);
+            const ip = yield http.getJson("https://api.ipify.org?format=json");
+            core.setOutput("ip", ip.result.ip);
+            core.info(`ip: ${ip.result.ip}`);
         }
         catch (error) {
             core.setFailed(error === null || error === void 0 ? void 0 : error.message);
