@@ -1,5 +1,5 @@
 {
-  "name": "@haythem/public-ip",
+  "name": "@buildboundless/public-ip",
   "version": "1.0.0",
   "description": "Queries the runner's public IP address",
   "private": true,
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/haythem/public-ip.git"
+    "url": "git+https://github.com/buildboundless/public-ip.git"
   },
   "keywords": [
     "actions",
